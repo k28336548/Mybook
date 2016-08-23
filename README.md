@@ -1,5 +1,7 @@
 #Mybook
 
+> Prototype of a privacy focused P2P social network.
+
 This web app Requires:  
 
 - CherryPy 3.1.2 or 7.1.0 (www.cherrypy.org)
