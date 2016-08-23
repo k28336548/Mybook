@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Personal Profile</title>
+<link href="../css/main.css" rel="stylesheet" />
+<link rel="shortcut icon" href="../img/my_icon.ico" />
+</head>
+<body>
+<div id="wrapper">
+<header id="topHeader">
+<h1>Mybook</h1>
+</header>
+
+<nav id="topMenu">
+<ul>
+<li><a href="{{ myAddr }}/public">Home</a></li>
+</ul>
+</nav>
+		
+<section id="mainSection">
+<div id="personalProfile">
+<h1>{{ name }}</h1>
+<h3>Sex</h3>
+<p>{{ sex }}</p>
+<br />
+
+<h3>Birthday</h3>
+<p>{{ day }}/{{ month }}/{{ year }}</p>
+<br />
+
+<h3>Email</h3>
+<a href="mailto:{{email}}">{{ email }}</a>
+<br />
+
+<h3>About Me</h3>
+<p>{{ aboutme }}</p>
+<br />
+<br />
+<form action='/friending' method='post'>
+<input type='submit' name='friending' value='Add Friend'>
+</form>
+
+
+</div>
+</section>
+
+
+
+	
+<footer id="footer">
+&copy Mybook 2012
+</footer>
+
+</div>
+</body>
+</html>

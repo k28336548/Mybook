@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Home</title>
+<link rel="shortcut icon" href="../img/my_icon.ico" />
+<link href="../css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="wrapper">
+<header id="topHeader">
+<h1>Mybook</h1>
+<link rel="shotcut icon" href="../img/my_icon.ico" />
+</header>
+
+<nav id="topMenu">
+<ul>
+<li><a href="http://{{ myAddr }}/home">Home</a></li>
+<li><a href="http://{{ myAddr }}/profile">Profile</a></li>
+<li><a href="http://{{ myAddr }}/event">Events</a></li>
+<li><a href="http://{{ myAddr }}/gallery">Gallery</a></li>
+</ul>
+</nav>
+		
+<section id="mainSection">
+<form action="/uploadPhoto" method="post" enctype="multipart/form-data">
+Choose a photo to upload:<input type="file" name="newPhoto" />
+<br />
+Photo description:
+<br />
+<textarea type="text" name="body" row="8" cols="40" style="height:100px">
+</textarea>
+<br />
+<input type="submit" name="uploadPhoto" value="Upload" />
+</form>
+</section>
+	
+<footer id="footer">
+&copy Mybook 2012
+</footer>
+
+</div>
+	
+<div id="onlineFriendList">
+<h4>Online Friends</h4>
+<ul class="green">
+{% for onlineFriend in onlineFriendList %}
+<li><div style="color:black;">{{ onlineFriend }}</div></li>
+{% endfor %}
+</ul>
+</div>
+
+<div id="sideBar">
+<nav id="sideMenu">
+<ul>
+<li><a href="http://{{ myAddr }}/whoonline">Who Is Online?</a></li>
+<li><a href="http://{{ myAddr }}/friendRequest">Friend Requests</a></li>
+<li><a href="http://{{ myAddr }}/editFriend">Edit Friend</a></li>
+<li><a href="http://{{ myAddr }}/uploadPhoto">Upload a Photo</a><li>
+<li><a href="http://{{ myAddr }}/signOut">Sign Out</a></li>
+</ul>
+</nav>
+</div>
+
+</body>
+
+</html>

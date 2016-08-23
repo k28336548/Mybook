@@ -1,0 +1,160 @@
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+
+h1{
+	font: bold 20px tahoma;
+}
+
+h2{
+	font: bold 14px tahoma;
+}
+
+header, section, footer, aside, nav, article, hgroup{
+	display: block;
+}
+
+body{
+	text-align: center;
+}
+
+textarea{
+	resize: none;
+}
+
+#wrapper{
+	position:absolute;
+	width: 1000px;
+	text-align: left;
+	left: 25%;	
+}
+
+#topHeader{
+	padding: 20px;
+}
+
+#topMenu{
+	background:#45A8D1;
+	color:white;
+}
+
+#topMenu li{
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	font: bold 14px arial;
+}
+
+#topMenu li a{
+	text-decoration:none;
+	color:white
+	
+}
+
+#mainSection{
+	clear: both;
+	float: center;
+	width: 660px;
+	margin: 30px; /* 720px, 280 left */
+
+}
+
+#footer{
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid black;
+}
+
+#sideBar{
+	width:200px;
+	position: absolute;
+	top: 100px;
+	right: 20px;
+	width: 220px;
+	margin: 20px 20px;
+	padding: 30px;
+	
+}
+
+article{
+	border: 1px solid black;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+
+article footer{
+	text-align: right;
+}
+
+#personalProfile{
+	margin:30px;
+}
+
+#personalProfile h1, h3{
+	margin-top: 20px;
+}
+
+#onlineList{
+	list-style-type: none;
+}
+
+#onlineList li{
+	font: 14px tahoma;
+	line-height:200%;
+}
+
+#onlineList li a{
+	text-decoration:none;
+	color: black;
+}
+
+
+#onlineList li a:hover{
+	font-weight: bold;
+}
+
+#onlineList li a:active{
+	color: #2B60DE;
+}
+
+#onlineFriendList{
+	position: absolute;
+	width: 50 px;
+	text-align: left;
+	left: 15%;
+	top: 15%;
+}
+
+ul.green{
+	list-style-type: disc;
+	color: green;
+}
+
+#sideBar{
+	position: absolute;
+	left: 1400px;
+	top:60px;
+}
+
+#sideMenu ul{
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+#sideMenu ul li{
+	margin-bottom: 20px;
+}
+
+#sideMenu ul li a{ 
+	text-decoration:none;
+	color: black;
+}
+
+img {
+	width:200px;
+	height:200px;
+}
+

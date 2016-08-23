@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Personal Profile</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="../img/my_icon.ico" />
+</head>
+<body>
+<div id="wrapper">
+<header id="topHeader">
+<h1>Mybook</h1>
+</header>
+
+<nav id="topMenu">
+<ul>
+<li><a href="http://{{ myAddr }}/signin">Home</a></li>
+<li><a href="profilepage.html">Profile</a></li>
+<li><a href="eventpage.html">Events</a></li>
+<li><a href="gallerypage.html">Gallery</a></li>
+</ul>
+</nav>
+		
+<section id="mainSection">
+<h1>Online People:</h1>
+<ul id="onlineList">
+{% for onlinePerson in onlineList %}
+<li><a href="http://{{ onlinePerson[0] }}:{{onlinePerson[1]}}/public?profile={{ onlinePerson[2] }}")>{{ onlinePerson[2] }}</a></li>
+{% endfor %}
+</ul>
+</section>
+
+<aside id="sideBar">
+<form action='/news' method='get'>
+<input type='submit' name='news' value='News' />
+</form> 
+<form action='/whoonline' method='get'>
+<input type='submit' name='whoonline' value='Who is online?' />
+</form>
+<form action='/welcome' method='get'>
+<input type='submit' value='Sign Out' />
+</form>
+</aside>
+	
+<footer id="footer">
+&copy Mybook 2012
+</footer>
+
+</div>
+
+<div id="sideBar">
+<nav id="sideMenu">
+<ul>
+<li><a href="http://{{ myAddr }}/whoonline">Who Is Online?</a></li>
+<li><a href="http://{{ myAddr }}/friendRequest">Friend Requests</a></li>
+<li><a href="http://{{ myAddr }}/editFriend">Edit Friend</a></li>
+<li><a href="http://{{ myAddr }}/uploadPhoto">Upload a Photo</a><li>
+<li><a href="http://{{ myAddr }}/welcome">Sign Out</a></li>
+</ul>
+</nav>
+</div>
+
+
+</body>
+</html>

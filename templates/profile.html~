@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Personal Profile</title>
+	<link href="../css/main.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="wrapper">
+		<header id="topHeader">
+			<h1>Acebook</h1>
+		</header>
+
+		<nav id="topMenu">
+			<ul>
+				<li><a href="signinpage.html">Home</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				<li>Events</li>
+				<li>Gallery</li>
+			</ul>
+		</nav>
+		
+		<section id="mainSection">
+			<h1>Fred Bones</h1>
+			<h3>Sex</h3>
+			<p>Male</p>
+			<h3>Birthday</h3>
+			<p>06/06/2122</p>
+			<h3>Contact Details</h3>
+			<p>Phone: +101 3 258 7563</p>
+			<p>Fax: +101 3 258 7596</p>
+			<a href="mailto:fred.bones@mars.com">fred.bones@mars.com</a>
+			<h3>Postal Address</h3>
+			<p>University of Mars</p>
+			<p>Private Bag 4700</p>
+			<p>New Sealand, Mars</p>
+				
+		</section>
+
+		<aside id="sideBar">
+				<form action='/news' method='get'>
+   				<input type='submit' name='news' value='News' />
+   				</form> 
+				<form action='/whoonline' method='get'>
+   				<input type='submit' name='whoonline' value='Who is online?' />
+   				</form>
+				<form action='/welcome' method='get'>
+   				<input type='submit' value='Sign Out' />
+   				</form>
+		</aside>
+	
+		<footer id="footer">
+			Copyright Acebook 2012
+		</footer>
+
+	</div>
+</body>
+</html>

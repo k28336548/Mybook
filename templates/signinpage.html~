@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Sign In</title>
+<link rel="shortcut icon" href="/img/my_icon.ico" />
+<link href="../css/main.css" rel="stylesheet" />
+</head>
+<body>
+<div id="wrapper">
+<header id="topHeader">
+<h1>Mybook</h1>
+</header>
+
+<nav id="topMenu">
+<ul>
+<li>Welcome</li>			
+</ul>
+</nav>
+		
+<section id="mainSection">
+<h3>Sign In</h3>
+<br />
+<form action='/signin' method='post'>
+Username:<input size="10" maxlength="64" type='text' name='username' />
+Password:<input size="10" maxlength="64" type='password' name='password' />
+<input type='submit' name='signin' value='Sign In'/>
+</form>
+
+<h3>Sign Up</h3>
+<br />
+<form action="/register" method="post">
+Username:<input size="10" type="text" name="username" />
+<br />
+Password:<input size="10" type="password" name="password" />
+<br />
+Name:<input size="12" maxlength="30" type="text" name="name" />
+<br />
+<br />
+Male<input type="radio" name="sex" value="male" />
+Female<input type="radio" name="sex" value="female" />
+<br />
+<br />
+<input type="submit" name="register" value="Submit">
+</form>			
+</section>
+
+
+<footer id="footer">
+&copy Mybook 2012
+</footer>
+
+</div>
+</body>
+</html>

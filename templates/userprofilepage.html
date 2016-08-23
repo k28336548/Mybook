@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Personal Profile</title>
+<link rel="shortcut icon" href="../img/my_icon.ico" />
+<link href="../css/main.css" rel="stylesheet" />
+</head>
+<body>
+<div id="wrapper">
+<header id="topHeader">
+<h1>Mybook</h1>
+</header>
+
+<nav id="topMenu">
+<ul>
+<li><a href="http://{{ myAddr }}/home">Home</a></li>
+<li><a href="http://{{ myAddr }}/profile">Profile</a></li>
+<li><a href="http://{{ myAddr }}/event">Events</a></li>
+<li><a href="http://{{ myAddr }}/gallery">Gallery</a></li>
+</ul>
+</nav>
+		
+<section id="mainSection">
+<div id="personalProfile">
+<h1>{{ name }}</h1>
+<br />
+<h4>Sex</h4>
+<p>{{ sex }}</p>
+<br />
+
+<h4>Birthday</h4>
+<p>{{ day }}/{{ month }}/{{ year }}</p>
+<br />
+
+<h4>Email</h4>
+<a href="mailto:{{email}}">{{ email }}</a>
+<br />
+
+<h4>About Me</h4>
+<p>{{ aboutme }}</p>
+<br />
+<br />
+
+<form action="/editProfile" method="post">
+<input type='submit' name="editProfile" value="Edit Profile" />
+</form>
+
+</div>
+</section>
+
+
+
+	
+<footer id="footer">
+&copy Mybook 2012
+</footer>
+
+</div>
+
+<div id="sideBar">
+<nav id="sideMenu">
+<ul>
+<li><a href="http://{{ myAddr }}/whoonline">Who Is Online?</a></li>
+<li><a href="http://{{ myAddr }}/friendRequest">Friend Requests</a></li>
+<li><a href="http://{{ myAddr }}/editFriend">Edit Friend</a></li>
+<li><a href="http://{{ myAddr }}/uploadPhoto">Upload a Photo</a><li>
+<li><a href="http://{{ myAddr }}/signOut">Sign Out</a></li>
+</ul>
+</nav>
+</div>
+
+</body>
+</html>

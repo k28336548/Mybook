@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Personal Profile</title>
+<link rel="shortcut icon" href="../img/my_icon.ico" />
+<link href="../css/main.css" rel="stylesheet" />
+</head>
+<body>
+<div id="wrapper">
+<header id="topHeader">
+<h1>Mybook</h1>
+</header>
+
+<nav id="topMenu">
+<ul>
+<li><a href="http://116.90.136.51:10001/public">Home</a></li>
+</ul>
+</nav>
+		
+<section id="mainSection">
+<h1>Users on this server</h1>
+<ul>
+{% for userId in userIds %}
+<li>
+<a href="http://116.90.136.51:10001/public?profile={{ userId }}">{{ userId }}</a>
+</li>
+{% endfor %}
+</ul>
+</section>
+	
+<footer id="footer">
+&copy Mybook 2012
+</footer>
+
+</div>
+</body>
