@@ -1,6 +1,6 @@
 This web app Requires:  CherryPy 3.1.2 or 7.1.0 (www.cherrypy.org) 
-						Python(use 2.7)                         
-						Jinja2   (jinja.pocoo.org)
+			Python(use 2.7)                         
+			Jinja2   (jinja.pocoo.org)
 
 This social network consists of multiple peers and a centralized address
 server to check up other peers' addresses.
