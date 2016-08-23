@@ -18,7 +18,8 @@ for each peer.
 
 If you want to test on multiple machines each represents a peer then make sure
 you change the ip accordingly or set it to 0.0.0.0 for public ip and turn on
-finding own ip through ip.42.pl
+finding own ip through ip.42.pl. Also make sure you change the address server's
+code where the valid ip range includes all peers' ip range. 
 
 Run the address server first in the addrServer folder. The address server
 has default address of 127.0.0.1:10001. The central server has to be running
