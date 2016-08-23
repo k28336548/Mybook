@@ -35,9 +35,7 @@ friendship. Only a friendship with two successful one way friendships is
 considered as a real friendship
 
 Data transfers are only successful if both friends are logged in online. All
-data are transferred in standard formats as encoded json messages.
-
-Session is used for identification to secure peer's data. clientKey is the key
+data are transferred in standard formats as encoded json messages.Session is used for identification to secure peer's data. clientKey is the key
 for accessing client and hostKey is the key for accessing host
 
 Since this is a prototype many features have not been polished and completed
