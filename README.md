@@ -8,6 +8,11 @@ This web app Requires:
 - Python (use 2.7)                         
 - Jinja2   (http://jinja.pocoo.org)
 
+There are two servers in this repository:
+
+- Peer server (MybookServer.py)
+- Address server (AddrServer/addr_server.py)
+
 This social network consists of multiple peers and a centralized address
 server to check up other peers' addresses.
 
